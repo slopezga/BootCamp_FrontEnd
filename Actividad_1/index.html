@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 1</title>
+
+    <link rel="shortcut icon" href="img/Personal/Símbolo.png">
+
+
+    <title>SLG</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +21,31 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="Logo-SLG.png" alt="logo">
+            <img class="ham-menu inactive" src="img/Icons/menu.svg" alt="menu">
 
-            <ul>
+            <img class="logo" src="img/Personal/Logo-SLG.png" alt="logo">
+
+            <ul class="menu-items-container">
                 <li class="menu-item"><a class="active" href="index.html">Quién soy</a></li>
                 <li class="menu-item"><a href="proyectos.html">Proyectos</a></li>
                 <li class="menu-item"><a href="certificados.html">Certificados</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu inactive">
+            <ul class="mobile-menu-container">
+                <li><a class="active" href="index.html">Quién soy</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="card-container">
             <div class="card">
                 <div class="card-left">
-                    <img class="perfil" src="Perfil.jpg" alt="">
+                    <img class="perfil" src="img/Personal/Perfil.jpg" alt="">
                     <div class="name"><p>Santiago López Gallego</p></div>
                 </div>
                 <div class="card-right">
@@ -40,6 +54,6 @@
             </div>
         </section>
     </main>
-
+    <script src="./main.js"></script>
 </body>
 </html>
