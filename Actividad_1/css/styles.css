@@ -67,6 +67,16 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    text-align: center;
+}
+.myName {
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.myLastName {
+    margin-top: 0;
+    font-size: 20px;
 }
 .perfil {
     width: 50%;
@@ -78,6 +88,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    padding-right: 50px;
 }
 
 /* certificados.html */
@@ -113,9 +124,23 @@ nav ul li a:hover {
 }
 .contact-left,
 .contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 32px;
     background-color: #FAFAFA;
     text-align: center;
+    width: 80%;
+    height: 30%;
+    align-items: center;
+}
+.contact-left a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
 }
 .contact-left img,
 .contact-right img {
@@ -124,12 +149,58 @@ nav ul li a:hover {
     width: 60px;
     color: #008A99;
 }
+.contact-right a img {
+    width: 70px;
+    height: 55px;
+}
 .contact-left p,
 .contact-right p {
     padding: 0;
     margin: 0;
     font-size: 32px;
     font-weight: bold;
+}
+
+/* proyectos.html */
+.proyectos-container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+.proyecto-container {
+    width: 80vw;
+    /* height: 75vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.proyecto-img {
+    border-right: 1px solid #000000;
+}
+.proyecto-img img {
+    width: 100%;
+}
+.proyecto-description {
+    padding: 0 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.proyecto-description p {
+    text-align: start;
+    font-size: 30px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 4px;
+    background-color: #3da4af;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.proyecto-description a {
+    margin-top: 0;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 28px;
 }
 
 @media (min-width: 1024px) {
@@ -153,6 +224,8 @@ nav ul li a:hover {
         position: absolute;
         background-color: white;
         padding: 0;
+        width: 100%;
+        text-align: center;
     }
     .mobile-menu-container li {
         padding: 4px 16px;
@@ -161,6 +234,7 @@ nav ul li a:hover {
     .mobile-menu-container li a {
         text-decoration: none;
         color: #414141;
+        font-size: 32px;
     }
     .mobile-menu-container li a:hover {
         font-weight: bold;
@@ -188,6 +262,10 @@ nav ul li a:hover {
         display: flex;
         justify-content: center;
     }
+    .card-right {
+        text-align: center;
+        padding: 0;
+    }
     .card {
         display: flex;
         flex-direction: column;
@@ -198,7 +276,7 @@ nav ul li a:hover {
         background-color: #FAFAFA;
     }
     .card-left img {
-        width: 25%;
+        width: 40%;
     }
     .diploma-container {
         width: 80vw;
@@ -213,5 +291,23 @@ nav ul li a:hover {
     .contact-right p {
         font-size: 24px;
         font-weight: bold;
+    }
+    .proyectos-container {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+    }
+    .proyecto-img {
+        border: none;
+    }
+    .proyecto-container {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .proyecto-description {
+        border-bottom: #000000 1px solid;
+        padding-bottom: 8px;
     }
 }
